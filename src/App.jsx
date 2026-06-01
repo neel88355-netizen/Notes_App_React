@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div className="h-screen lg:flex bg-black text-white">
+      <div className="min-h-screen lg:flex bg-black text-white">
         <form
           onSubmit={formSubmit}
           className="flex items-start lg:w-1/2 gap-4 flex-col p-10"
