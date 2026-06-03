@@ -31,7 +31,7 @@ function App() {
       <div className="min-h-screen lg:flex bg-black text-white">
         <form
           onSubmit={formSubmit}
-          className="flex items-start lg:w-1/2 gap-4 flex-col p-10"
+          className="flex items-start lg:w-1/2 gap-4 flex-col p-6"
         >
           <h1 className="font-bold text-2xl mx-auto lg:mx-0 mb-5">
             Add Notes
@@ -54,7 +54,7 @@ function App() {
             Add Notes
           </button>
         </form>
-        <div className="p-10 lg:border-l-2 lg:w-1/2 ">
+        <div className="p-6 lg:border-l-2 lg:w-1/2 ">
           <h1 className="font-bold text-2xl text-center lg:text-start mb-5">
             Recent Notes
           </h1>
