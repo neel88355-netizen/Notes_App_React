@@ -62,18 +62,18 @@ function App() {
             {task.map((value, index) => {
               return (
                 <div
-                  className=" relative w-45 h-62 rounded-2xl p-4 bg-linear-to-br from-blue-300 to-purple-300 text-black"
+                  className=" relative w-45 h-62 rounded-2xl p-4 bg-linear-to-br from-slate-950 via-cyan-950 to-blue-950 text-black"
                   key={index}
                 >
-                  <h1 className="leading-tight text-xl mt-5 font-bold">
+                  <h1 className="leading-tight text-xl mt-5 text-white font-bold">
                     {value.title}
                   </h1>
-                  <p className="mt-2 leading-tight font-medium text-gray-500">
+                  <p className="mt-2 leading-tight font-medium text-gray-300">
                     {value.description}
                   </p>
 
                   <button
-                    className="absolute bottom-3 bg-red-500 px-12.5 text-white font-semibold py-1.5 rounded-md cursor-pointer hover:bg-red-600 transition duration-300"
+                    className="absolute bottom-3 bg-red-500/20 border border-red-500 hover:bg-red-600 px-12.5 text-white font-semibold py-1.5 rounded-md cursor-pointer hover:bg-red-600 transition duration-300"
                     onClick={() => deleteNote(index)}
                   >
                     Delete
