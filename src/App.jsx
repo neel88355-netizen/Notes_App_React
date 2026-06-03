@@ -12,6 +12,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("task", JSON.stringify(task));
   }, [task]);
+  
   const formSubmit = (e) => {
     e.preventDefault();
     setTask([...task, { title, description }]);
@@ -32,28 +33,32 @@ function App() {
           onSubmit={formSubmit}
           className="flex items-start lg:w-1/2 gap-4 flex-col p-10"
         >
-          <h1 className="font-bold text-2xl mb-5">Add Notes</h1>
+          <h1 className="font-bold text-2xl mx-auto lg:mx-0 mb-5">
+            Add Notes
+          </h1>
           <input
             type="text"
             placeholder="Enter Notes Heading"
-            className="p-5 border-2 w-140 rounded outline-none px-5 py-2"
+            className="p-5 border-2 w-full lg:w-140 rounded outline-none px-5 py-2"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
           <textarea
             type="text"
             placeholder="Write Details"
-            className="p-5 border-2 w-140 h-30 rounded outline-none px-5 py-2"
+            className="p-5 border-2 w-full lg:w-140 h-30 rounded outline-none px-5 py-2"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
-          <button className="bg-white active:bg-gray-200 cursor-pointer w-140 text-black outline-none inline px-5 py-2 rounded">
+          <button className="bg-white active:bg-gray-200 cursor-pointer w-full lg:w-140 text-black outline-none inline px-5 py-2 rounded">
             Add Notes
           </button>
         </form>
-        <div className="p-10 lg:border-l-2 lg:w-1/2">
-          <h1 className="font-bold text-2xl mb-5">Recent Notes</h1>
-          <div className="flex items-start justify-start flex-wrap gap-8 overflow-auto h-full">
+        <div className="p-10 lg:border-l-2 lg:w-1/2 ">
+          <h1 className="font-bold text-2xl text-center lg:text-start mb-5">
+            Recent Notes
+          </h1>
+          <div className="flex items-start justify-center lg:justify-start flex-wrap gap-8 overflow-auto h-full">
             {task.map((value, index) => {
               return (
                 <div
