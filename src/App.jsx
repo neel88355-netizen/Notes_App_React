@@ -73,7 +73,7 @@ function App() {
                   </p>
 
                   <button
-                    className="absolute bottom-3 bg-red-500/20 border border-red-500 hover:bg-red-600 px-12.5 text-white font-semibold py-1.5 rounded-md cursor-pointer hover:bg-red-600 transition duration-300"
+                    className="absolute bottom-3 bg-red-500/20 border border-red-500 hover:bg-red-600 px-12.5 text-white font-semibold py-1.5 rounded-md cursor-pointer transition duration-300"
                     onClick={() => deleteNote(index)}
                   >
                     Delete
